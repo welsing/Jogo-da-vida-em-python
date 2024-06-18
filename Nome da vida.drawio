@@ -1,9 +1,73 @@
-<mxfile host="app.diagrams.net" modified="2024-06-18T14:55:34.511Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" version="24.5.5" etag="m9cj_WAZxFjIPpQF2GH_" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-18T15:08:30.933Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="HvMa6QJPXU8ALsCigpyF" version="24.5.5" type="github">
   <diagram name="Página-1" id="0b4USbaF7EnxeBoQmIzv">
-    <mxGraphModel>
+    <mxGraphModel dx="1379" dy="785" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="xAbivjJdV7RqzWkPjaea-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xAbivjJdV7RqzWkPjaea-2" target="xAbivjJdV7RqzWkPjaea-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xAbivjJdV7RqzWkPjaea-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="xAbivjJdV7RqzWkPjaea-2" target="xAbivjJdV7RqzWkPjaea-25">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="50" y="120" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="110" y="210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xAbivjJdV7RqzWkPjaea-2" value="Inserir paramê&lt;span style=&quot;background-color: initial;&quot;&gt;tros&lt;/span&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xAbivjJdV7RqzWkPjaea-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xAbivjJdV7RqzWkPjaea-5" target="xAbivjJdV7RqzWkPjaea-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xAbivjJdV7RqzWkPjaea-5" value="EXECUTAR" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="200" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xAbivjJdV7RqzWkPjaea-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xAbivjJdV7RqzWkPjaea-7" target="xAbivjJdV7RqzWkPjaea-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xAbivjJdV7RqzWkPjaea-7" value="Função de desenhar um GRID (Linhas e COLUNAS)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xAbivjJdV7RqzWkPjaea-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xAbivjJdV7RqzWkPjaea-9" target="xAbivjJdV7RqzWkPjaea-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xAbivjJdV7RqzWkPjaea-9" value="GERADA LISTA VAZIA COM OS PARAMÊ&lt;span style=&quot;background-color: initial;&quot;&gt;TROS DEFINIDOS&lt;/span&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="310" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="xAbivjJdV7RqzWkPjaea-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="xAbivjJdV7RqzWkPjaea-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xAbivjJdV7RqzWkPjaea-12" value="É RANDOMIZADO POR FILEIRA A CHANCE DE UM QUADRADO DO GRID SER ACESSO. DE ACORDO COM OS PARAMETROS" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="285" width="210" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="xAbivjJdV7RqzWkPjaea-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xAbivjJdV7RqzWkPjaea-16" target="xAbivjJdV7RqzWkPjaea-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xAbivjJdV7RqzWkPjaea-16" value="INICIA O DISPLAY (TELA COM INFORMAÇÕES)&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="460" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xAbivjJdV7RqzWkPjaea-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xAbivjJdV7RqzWkPjaea-17" target="xAbivjJdV7RqzWkPjaea-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xAbivjJdV7RqzWkPjaea-17" value="É DEFINIDO AS CÉLULAS INICIAIS NO DISPLAY" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="470" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xAbivjJdV7RqzWkPjaea-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xAbivjJdV7RqzWkPjaea-19" target="xAbivjJdV7RqzWkPjaea-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xAbivjJdV7RqzWkPjaea-19" value="OS VIZINHOS SE COMPORTAM DA FORMA DEFINIDA" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="470" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xAbivjJdV7RqzWkPjaea-21" value="RENOVA O CICLO A CADA TEMPO&lt;div&gt;(Definido nos parâmetros)&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="465" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="xAbivjJdV7RqzWkPjaea-25" value="- Tamanho do grid&lt;div&gt;- Probabilidade de vida no grid&lt;br&gt;&lt;div&gt;- Comportamento das células&lt;/div&gt;&lt;/div&gt;&lt;div&gt;- Tempo do ciclo&lt;/div&gt;" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry y="60" width="250" height="100" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
