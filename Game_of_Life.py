@@ -3,19 +3,29 @@ import random
 import copy
 
 screen=turtle.Screen()
+
 turtle.setup(1000,1000)
-turtle.title("Jogo da Vida do Nickar")
+turtle.title("Conway's Game of Life by Nexus")
 turtle.hideturtle()
 turtle.speed(0)
 turtle.tracer(0,0)
 
+tortuga = turtle.Turtle() # Criando uma tela para alertas 
 lifeturtle = turtle.Turtle() # Desenhando vida
 lifeturtle.up()
 lifeturtle.hideturtle()
 lifeturtle.speed(0)
 lifeturtle.color('black')
 
-n = 50 # nXn grid
+
+# ALERTBOXS E INPUTS
+n = int(screen.textinput("Grid", "Tamanho da Grid (n X n)")) # nXn grid
+tipo = int(screen.textinput("Tipo de Vida", "Tipo de vida: Gerada (1) ou Escolhida (2)?"))
+turtle.TK.messagebox.showinfo(title = "AVISO!", message = "É possível fechar a simulação utilizando a tecla [Q]")
+
+
+#DEFS PARA AGILIZAR PROCESSOS
+
 def draw_line(x1,y1,x2,y2): # pra desenhando as linhas x e y
     turtle.up()
     turtle.goto(x1,y1)
@@ -34,7 +44,10 @@ def draw_grid(): # desenhando a grid mesmo
         draw_line(-400,y,400,y)
         y += 800/n
 
+
 life = list() # criando a lista
+
+
 def init_lives():
     for i in range(n):
         liferow = [] # a lista da vida
@@ -43,7 +56,7 @@ def init_lives():
                 liferow.append(1) # 1 da a vida
             else:
                 liferow.append(0) # 0 a vida morre
-        life.append(liferow) 
+        life.append(liferow)
 
 def draw_square(x,y,size): # desenhando uma fileira de vida
     lifeturtle.up()
@@ -67,12 +80,12 @@ def draw_all_life(): # desenhando a vida em geral
         for j in range(n):
             if life[i][j] == 1: draw_life(i,j) # draw live cells
 
-def num_neighbors(x,y): # ensinando como funciona os vizinhos para o pc [x,y]
-    sum = 0
-    for i in range(max(x-1,0),min(x+1,n-1)+1):
-        for j in range(max(y-1,0),min(y+1,n-1)+1):
-            sum += life[i][j]
-    return sum - life[x][y]
+def num_neighbors(x, y):  # ensinando como funciona os vizinhos para o pc [x,y]
+    total = 0
+    for i in range(max(x - 1, 0), min(x + 1, n - 1) + 1):
+        for j in range(max(y - 1, 0), min(y + 1, n - 1) + 1):
+            total += life[i][j]
+    return total - life[x][y]
         
 def update_life(): # atualizando o ciclo
     global life 
@@ -90,6 +103,31 @@ def update_life(): # atualizando o ciclo
     screen.update() 
     screen.ontimer(update_life,200) # atualizando a cada 0.2 segundos
 
+def parar(): # finalização da tarefa (SUJEITO A ALTERAÇÃO)
+    turtle.bye()
+    
+turtle.onkeypress(parar, "q")
+turtle.listen()
+
+    
+# EXECUTÁVEL
 draw_grid()
-init_lives()
-update_life()
+
+
+# IF'S NECESSÁRIOS PARA VARIAÇÃO DO USUÁRIO
+
+if tipo == 1:
+    init_lives()
+    update_life()
+    # NECESSIDADE DE ARRUMAR UM JEITO DE SUMIR COM A SETA TURTLE
+
+elif tipo == 2:
+    turtle.clearscreen()
+    turtle.TK.messagebox.showinfo(title = "AVISO!", message = "Não está feito!")
+    turtle.bye()
+    
+
+else:
+    turtle.clearscreen()
+    turtle.TK.messagebox.showinfo(title = "AVISO!", message = "A escolha precisa ser 1 ou 2!")
+    turtle.bye()
