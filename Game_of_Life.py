@@ -131,3 +131,6 @@ else:
     turtle.clearscreen()
     turtle.TK.messagebox.showinfo(title = "AVISO!", message = "A escolha precisa ser 1 ou 2!")
     turtle.bye()
+
+
+turtle.done()
