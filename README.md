@@ -7,9 +7,9 @@ Este repositório contém nosso trabalho para a disciplina de COMPUTAÇÃO 1 da 
 O objetivo deste projeto é criar uma versão do Jogo da Vida para fins educacionais, servindo como nosso trabalho final para a disciplina. Este projeto não tem fins lucrativos e é destinado exclusivamente para estudos e demonstração de conceitos aprendidos em sala de aula.
 
 ## Desenvolvedores
-- Bernardo
+- Bernardo Welsing
 - Rodrigo
-- Nickolas
+- Nickolas Telles
 
 ## Estado Atual do Projeto
 O projeto está atualmente em desenvolvimento. Estamos trabalhando ativamente para adicionar funcionalidades e melhorar o código. Como parte do processo de aprendizado, o projeto sofrerá atualizações contínuas.
