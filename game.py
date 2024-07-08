@@ -4,13 +4,13 @@ import copy
 def iniciando_a_vida(tamanho, probabilidade_selecionada):
     conjunto_de_celulas = []
     for i in range(tamanho):
-        conjunto_de_celulas = []
+        liferow = []
         for j in range(tamanho):
             if random.randint(0, int(probabilidade_selecionada)) == 0:
-                conjunto_de_celulas.append(1)
+                liferow.append(1)
             else:
-                conjunto_de_celulas.append(0)
-        conjunto_de_celulas.append(conjunto_de_celulas)
+                liferow.append(0)
+        conjunto_de_celulas.append(liferow)
     return conjunto_de_celulas
 
 def quantidade_vizinhos(conjunto_de_celulas, x, y, tamanho):
