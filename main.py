@@ -1,5 +1,5 @@
 import turtle
-from tela import setup_screen, desenhar_grid, desenhar_vida_total, atualizar_população, parar
+from tela import setup_screen, desenhar_grid, acender_população_viva, atualizar_população, celulas_vivas, hud, parar
 import game
 
 def main():
@@ -22,16 +22,18 @@ def main():
             probabilidade_selecionada = int(probabilidade_selecionada)
             break
 
-    conjunto_de_celulas = game.iniciando_a_vida(tamanho, probabilidade_selecionada)
+    população_geral = game.iniciando_a_vida(tamanho, probabilidade_selecionada)
     
     setup_screen()
     desenhar_grid(tamanho)
-    desenhar_vida_total(conjunto_de_celulas, tamanho)
-    atualizar_população(conjunto_de_celulas, tamanho)
+    acender_população_viva(população_geral, tamanho)
+    atualizar_população(população_geral, tamanho)
 
+    # turtle.onkeypress(hud, "t")
     turtle.onkeypress(parar, "q")
+    turtle.onkeypress(game.alterar_velocidade, "t")
     turtle.listen()
     turtle.done()
 
-if __name__ == "__main__":
-    main()
+
+main()
