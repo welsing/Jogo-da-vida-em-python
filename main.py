@@ -29,9 +29,8 @@ def main():
     acender_população_viva(população_geral, tamanho)
     atualizar_população(população_geral, tamanho)
 
-    # turtle.onkeypress(hud, "t")
     turtle.onkeypress(parar, "q")
-    turtle.onkeypress(game.alterar_velocidade, "t")
+    #turtle.onkeypress(game.alterar_velocidade, "t")
     turtle.listen()
     turtle.done()
 

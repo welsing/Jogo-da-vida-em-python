@@ -3,6 +3,7 @@ import game
 
 screen = turtle.Screen()
 celula = turtle.Turtle()
+pen = turtle.Turtle()
 
 def setup_screen():
     """Configura a tela do turtle \n () -> None"""
@@ -69,8 +70,7 @@ def acender_população_viva(população_geral, tamanho):
 
 def mostrar_informação(x, y, text):
     """Essa função tem a finalidade escrever algo na tela do turtle em determinada coordenada \n (float, float, text) -> None"""
-    pen = turtle.Turtle()
-    pen.clear()
+
     pen.hideturtle()
     pen.penup()
     
@@ -99,6 +99,7 @@ def atualizar_população(população_geral, tamanho):
     acender_população_viva(proxima_população, tamanho)
     screen.update()
     screen.ontimer(lambda: atualizar_população(proxima_população, tamanho), 290)
+    pen.clear()
     hud(celulas_vivas(população_geral))
 
 
