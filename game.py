@@ -50,27 +50,29 @@ def celulas_vivas(população):
 
 
 # CASOS DE TESTES
-# if __name__ == "__main__":
-#     celulasteste = iniciando_a_vida(3,1) # Vai gerar uma matriz de zeros e uns com grande chance da maioria vir 1
-#     print(celulasteste)  # print da matriz gerada para o teste
-#     print(celulas_vivas([[0,0,0,0,1],[1,1,1,0,0]]) ) # retorna 4
-#     print(quantidade_vizinhos(celulasteste, 1, 1, 3))
-#     print(atualizar_população(celulasteste, 3))  # Verifica a população e mata ou revive uma celula de acordo com as regras definidas (mais de 3 vizinhos ou - de 2 = morte, 3 vizinhos em volta a celula vive)
+if __name__ == "__main__":
+    celulasteste = iniciando_a_vida(3,1) # Vai gerar uma matriz de zeros e uns com grande chance da maioria vir 1
+    print(celulasteste)  # print da matriz gerada para o teste
+    print(celulas_vivas([[0,0,0,0,1],[1,1,1,0,0]]) ) # retorna 4
+    print(quantidade_vizinhos(celulasteste, 1, 1, 3))
+    print(atualizar_população(celulasteste, 3))  # Verifica a população e mata ou revive uma celula de acordo com as regras definidas (mais de 3 vizinhos ou - de 2 = morte, 3 vizinhos em volta a celula vive)
 
 
-def velocidades(vel):
-    velocidades = [190, 350, 490]
-    proxima_velocidade = velocidades[velocidade_atual]
-    return proxima_velocidade
 
-def alterar_velocidade():
-    global velocidade_atual
-    if velocidade_atual == 2:
-        velocidade_atual = 0
-    else:
-        velocidade_atual += 1
-    vel = velocidades(velocidade_atual)
-    return vel
 
-print(alterar_velocidade)
-print(alterar_velocidade)
+# def velocidades(vel):
+#     velocidades = [190, 350, 490]
+#     proxima_velocidade = velocidades[velocidade_atual]
+#     return proxima_velocidade
+
+# def alterar_velocidade():
+#     global velocidade_atual
+#     if velocidade_atual == 2:
+#         velocidade_atual = 0                      por conta de conflitos e pouco tempo não conseguimos 
+#     else:                                         implementar o switch de velocidade
+#         velocidade_atual += 1
+#     vel = velocidades(velocidade_atual)
+#     return vel
+
+# print(alterar_velocidade)
+# print(alterar_velocidade)
