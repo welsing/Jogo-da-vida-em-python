@@ -78,15 +78,6 @@ def mostrar_informação(x, y, text):
     pen.write(text, align="center", font=("Arial", 12, "normal"))
 
 
-def celulas_vivas(população):
-    qtd = 0 
-    for linha in população:
-        for celula in linha:
-            if celula == 1:
-                qtd += 1
-    return qtd
-
-
 def hud(celulas):
     """Mostra as informações necessarias da simulação como a quantidade de células vivas \n (int) -> None"""
     mostrar_informação(-300, 400, F"VIVAS: {celulas}")
@@ -100,9 +91,18 @@ def atualizar_população(população_geral, tamanho):
     screen.update()
     screen.ontimer(lambda: atualizar_população(proxima_população, tamanho), 290)
     pen.clear()
-    hud(celulas_vivas(população_geral))
+    hud(game.celulas_vivas(população_geral))
 
 
 def parar():
     """Fecha a janela e encerra a simulação. \n () -> None"""
     turtle.bye()
+
+
+## CASOS DE TESTES 
+
+if __name__ == "__main__":
+    desenhar_linhas(0, 200, 0, -200) ## Desenha uma linha reta no meio, de cima para baixo
+    desenhar_grid(3) # Desenha uma grade 3x3
+    mostrar_informação(200, 400, "TESTE")  # Mostra um texto ("teste") no canto superior direito
+

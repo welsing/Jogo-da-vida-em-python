@@ -1,11 +1,11 @@
 import turtle
-from tela import setup_screen, desenhar_grid, acender_população_viva, atualizar_população, celulas_vivas, hud, parar
+from tela import setup_screen, desenhar_grid, acender_população_viva, atualizar_população, parar
 import game
 
 def main():
     screen = turtle.Screen()
     turtle.TK.messagebox.showinfo(title="AVISO!", message="É possível fechar a simulação utilizando a tecla [Q]")
-
+    
     while True:
         tamanho = screen.textinput("Grid", "Tamanho da Grid (n X n)")
         if not tamanho.isdigit():
